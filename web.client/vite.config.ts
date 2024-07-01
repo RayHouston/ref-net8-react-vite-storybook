@@ -11,13 +11,17 @@ const baseFolder =
         ? `${process.env.APPDATA}/ASP.NET/https`
         : `${process.env.HOME}/.aspnet/https`;
 
+console.log(`Base folder: ${baseFolder}`);
+
 const certificateArg = process.argv.map(arg => arg.match(/--name=(?<value>.+)/i)).filter(Boolean)[0];
-const certificateName = certificateArg ? certificateArg.groups.value : "web.client";
+const certificateName = certificateArg ? (certificateArg.groups ? certificateArg.groups.value : undefined) : "localhost";
 
 if (!certificateName) {
     console.error('Invalid certificate name. Run this script in the context of an npm/yarn script or pass --name=<<app>> explicitly.')
     process.exit(-1);
 }
+
+console.log(`Certificate name: ${certificateName}`);
 
 const certFilePath = path.join(baseFolder, `${certificateName}.pem`);
 const keyFilePath = path.join(baseFolder, `${certificateName}.key`);
