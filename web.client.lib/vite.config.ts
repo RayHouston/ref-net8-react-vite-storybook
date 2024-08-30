@@ -6,13 +6,13 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   plugins: [
     react(),
-    dts({ insertTypesEntry: true, exclude: ["**/*.stories.ts", "**/*.test.tsx"]}),
+    dts({ insertTypesEntry: true, tsconfigPath: './tsconfig.app.json', exclude: ["**/*.stories.ts", "**/*.test.tsx"]}),
   ],
   build: { 
     lib: { 
       entry: './src/index.ts', 
-      name: 'ui', 
-      fileName: (format) => `ui.${format}.js`,
+      name: 'web.client.lib', 
+      fileName: (format) => `web.client.lib.${format}.js`,
       formats: ['es', 'cjs', 'umd'],
     }, 
     rollupOptions: { 
