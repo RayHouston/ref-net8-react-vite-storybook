@@ -43,7 +43,7 @@ function App() {
     return (
         <div>
             <div>
-                <Card title='Sample Card' description="test card" />
+                <Card />
                 <Button variant="contained">This is a Material Button in App</Button>
             </div>
             <div>
