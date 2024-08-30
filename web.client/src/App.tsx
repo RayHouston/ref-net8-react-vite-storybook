@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { Card } from "web.client.lib";
+import Button from '@mui/material/Button';
 
 interface Forecast {
     date: string;
@@ -42,7 +43,7 @@ function App() {
     return (
         <div>
             <Card title='Sample Card' description="test card" />
-
+            <Button variant="contained">Hello world</Button>
             <h1 id="tabelLabel">Weather forecast</h1>
             <p>This component demonstrates fetching data from the server.</p>
             {contents}
