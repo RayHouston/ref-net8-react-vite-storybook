@@ -13,7 +13,7 @@ export default defineConfig({
       entry: './src/index.ts', 
       name: 'web.client.lib', 
       fileName: (format) => `web.client.lib.${format}.js`,
-      formats: ['es', 'cjs', 'umd'],
+      formats: ['es'],
     }, 
     rollupOptions: { 
       external: Object.keys(peerDependencies), 
