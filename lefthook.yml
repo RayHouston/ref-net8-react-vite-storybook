@@ -1,4 +1,4 @@
 pre-commit:
   commands:
     lint:
-      run: cd web.client.components && npx lint-staged
+      run: cd web.client.components && npx lint-staged && cd .. && cd web.client && npx lint-staged
