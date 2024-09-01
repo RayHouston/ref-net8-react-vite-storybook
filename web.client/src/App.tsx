@@ -10,7 +10,8 @@ interface Forecast {
     summary: string;
 }
 
-function App() {
+function App()
+{
     const [forecasts, setForecasts] = useState<Forecast[]>();
 
     useEffect(() => {
