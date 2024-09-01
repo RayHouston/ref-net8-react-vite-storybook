@@ -16,7 +16,7 @@
     "scripts": {
         "dev": "vite",
         "build": "tsc -b && vite build",
-        "lint": "eslint . --fix",
+        "lint": "eslint . --fix && prettier --write .",
         "format": "prettier --write .",
         "preview": "vite preview",
         "storybook": "storybook dev -p 6006",
