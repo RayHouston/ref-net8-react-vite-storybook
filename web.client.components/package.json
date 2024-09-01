@@ -1,12 +1,12 @@
 {
-    "name": "web.client.lib",
+    "name": "web.client.components",
     "private": true,
     "version": "0.0.0",
     "type": "module",
     "types": "dist/index.d.ts",
     "exports": {
         ".": {
-            "import": "./dist/web.client.lib.es.js",
+            "import": "./dist/web.client.components.es.js",
             "types": "./dist/index.d.ts"
         }
     },

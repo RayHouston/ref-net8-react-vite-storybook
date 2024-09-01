@@ -15,8 +15,8 @@ export default defineConfig({
     build: {
         lib: {
             entry: "./src/index.ts",
-            name: "web.client.lib",
-            fileName: (format) => `web.client.lib.${format}.js`,
+            name: "web.client.components",
+            fileName: (format) => `web.client.components.${format}.js`,
             formats: ["es"],
         },
         rollupOptions: {

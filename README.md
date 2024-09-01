@@ -8,7 +8,7 @@ chmod 600 ~/.aspnet/https/localhost.key
 ```
 
 ### Link Component Lib
-From `web.client.lib/`
+From `web.client.components/`
 ```bash
 npm link
 ```
@@ -16,7 +16,7 @@ npm link
 ### Link App to Component Lib
 From `web.client/`
 ```bash
-npm link web.client.lib
+npm link web.client.components
 ```
 
 ### Lefthook

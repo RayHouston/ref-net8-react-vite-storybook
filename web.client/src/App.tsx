@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import { Card } from "web.client.lib";
+import { Card } from "web.client.components";
 import Button from '@mui/material/Button';
 
 interface Forecast {
