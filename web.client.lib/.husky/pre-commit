@@ -1,2 +1,0 @@
-cd web.client.lib
-npx lint-staged
