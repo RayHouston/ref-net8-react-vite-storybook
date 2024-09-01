@@ -19,6 +19,14 @@ From `web.client/`
 npm link web.client.lib
 ```
 
-### Install lefthook
+### Lefthook
+This tools allows us to use git hooks to run tasks
+
+Windows:
 https://github.com/evilmartians/lefthook/blob/master/docs/install.md#winget
+
+From the repo root setup lefthook
+```bash
+lefthook install
+```
 
