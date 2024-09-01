@@ -18,3 +18,7 @@ From `web.client/`
 ```bash
 npm link web.client.lib
 ```
+
+### Install lefthook
+https://github.com/evilmartians/lefthook/blob/master/docs/install.md#winget
+
