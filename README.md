@@ -30,3 +30,13 @@ From the repo root setup lefthook
 lefthook install
 ```
 
+### Usefull commands
+Start .NET and React Application from repo root
+```bash
+dotnet run --project Web.Server
+```
+
+Run storybook from `web.client.components`
+```bash
+npm run storybook
+```
