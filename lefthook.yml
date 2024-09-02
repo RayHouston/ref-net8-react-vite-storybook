@@ -1,12 +1,16 @@
+output:
+    - summary
 pre-commit:
-    output: summary
-    parallel: false
     commands:
         lint-components:
+            priority: 1
             run: cd web.client.components && npx lint-staged
         lint-client:
+            priority: 2
             run: cd web.client && npx lint-staged
         compile-components:
+            priority: 3
             run: cd web.client.components && tsc --noEmit --skipLibCheck
         compile-client:
+            priority: 4
             run: cd web.client && npx tsc --noEmit --skipLibCheck
